@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CMSApp</title>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./App.css" />
+</head>
+<body>
+    <header class="bg-dark text-light mrthead">Customer Management System</header>
+    <div class="bg-logp">
+    <form name="myForm">
+        <div class=" container mt-5 psf mrtprof">
+        <div  class="">
+        <h5 class="text-dark"> <b>First Name</b><label class="text-danger">*</label>: </h5> 
+        <h6 id="fnameErr" class=" text-danger"></h6>
+        <input 
+            class=""
+            type="text" 
+            id="firstName"
+            name="firstName" 
+            />
+        </div>
+       
+        <div>
+        <h5><b>Last Name</b> : </h5>
+        <input 
+            type="text"     
+            name="lastName"
+            id="lastName" />
+        </div>
+
+        <div  class="">
+        <h5> <b>Mobile</b><label class="text-danger">*</label>: </h5>
+        <h6 id="mobileErr" class="text-danger"></h6>
+        <input 
+            type="text" 
+            id="mobile" 
+            name="mobile" 
+            />
+        </div>
+       
+        
+        <div  class="">
+        <h5><b>Email</b><label class="text-danger">*</label>: </h5>
+        <h6 id="emailErr" class="text-danger"></h6>
+        <input 
+            type="text" 
+            id="email" 
+            name="email" 
+            />
+            </div>
+        
+        
+        <div class="">
+        <input 
+            class="btn btn-dark "
+            type="submit" 
+            value="Add" 
+            />
+        </div>
+
+    </div> 
+    </form>
+    <div id="customers" class="mrlcont">
+            <table id="customersTable" class="pl-5 table table-bordered bg-light mt-5">
+                <tr class="bg-dark text-light">
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        First Name
+                    </th>
+                    <th>
+                        Last Name
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Mobile
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </table>
+        </div>
+</div>
+</div>
+<!-- <script src="validate.js"></script> -->
+</body>
+</html>
